@@ -1,0 +1,83 @@
+﻿python : test_ask_answers_from_knowledge_base (test_base_api.BaseApiTest.test_ask_answers_from_knowledge_base) ... ok
+En línea: 1 Carácter: 11
++ $output = python -m unittest discover -s tests/base -p "test_*.py" -v ...
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_ask_answer...ge_base) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_ask_requires_user_and_question (test_base_api.BaseApiTest.test_ask_requires_user_and_question) ... ok
+test_health_returns_ok (test_base_api.BaseApiTest.test_health_returns_ok) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.573s
+
+OK
+python : test_ask_uses_context_to_influence_later_response 
+(test_cag_contract.CagContractTest.test_ask_uses_context_to_influence_later_response) ... ok
+En línea: 1 Carácter: 88
++ ...  $output += python -m unittest discover -s tests/validation -p "test_ ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_ask_uses_c...esponse) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_retrieves_context_for_user (test_cag_contract.CagContractTest.test_retrieves_context_for_user) ... ok
+test_saves_context_for_user (test_cag_contract.CagContractTest.test_saves_context_for_user) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.561s
+
+OK
+python : test_ask_returns_answer_with_sources 
+(test_cag_integration.CagIntegrationTest.test_ask_returns_answer_with_sources) ... ok
+En línea: 1 Carácter: 171
++ ...  $output += python -m unittest discover -s tests/custom -p "test_*.py ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (test_ask_return...sources) ... ok:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+test_ask_with_multiple_context_items (test_cag_integration.CagIntegrationTest.test_ask_with_multiple_context_items) 
+... ok
+test_ask_without_context_returns_empty_context_used 
+(test_cag_integration.CagIntegrationTest.test_ask_without_context_returns_empty_context_used) ... ok
+test_context_after_ask_is_persistent (test_cag_integration.CagIntegrationTest.test_context_after_ask_is_persistent) 
+... ok
+test_context_isolated_per_user (test_cag_integration.CagIntegrationTest.test_context_isolated_per_user) ... ok
+test_get_context_missing_user_id (test_cag_integration.CagIntegrationTest.test_get_context_missing_user_id) ... ok
+test_health_endpoint (test_cag_integration.CagIntegrationTest.test_health_endpoint) ... ok
+test_overwrite_context_key_via_api (test_cag_integration.CagIntegrationTest.test_overwrite_context_key_via_api) ... ok
+test_post_ask_missing_question (test_cag_integration.CagIntegrationTest.test_post_ask_missing_question) ... ok
+test_post_context_missing_key (test_cag_integration.CagIntegrationTest.test_post_context_missing_key) ... ok
+test_audience_avanzado_modifies_answer (test_cag_logic.CagLogicUnitTest.test_audience_avanzado_modifies_answer) ... ok
+test_audience_principiante_modifies_answer 
+(test_cag_logic.CagLogicUnitTest.test_audience_principiante_modifies_answer) ... ok
+test_case_insensitive_audience_matching (test_cag_logic.CagLogicUnitTest.test_case_insensitive_audience_matching) ... 
+ok
+test_context_without_key_field (test_cag_logic.CagLogicUnitTest.test_context_without_key_field) ... ok
+test_empty_context_items_list (test_cag_logic.CagLogicUnitTest.test_empty_context_items_list) ... ok
+test_format_breve_truncates_long_answer (test_cag_logic.CagLogicUnitTest.test_format_breve_truncates_long_answer) ... 
+ok
+test_format_detallado_adds_extra (test_cag_logic.CagLogicUnitTest.test_format_detallado_adds_extra) ... ok
+test_multiple_context_keys_combined (test_cag_logic.CagLogicUnitTest.test_multiple_context_keys_combined) ... ok
+test_no_context_returns_answer_unchanged (test_cag_logic.CagLogicUnitTest.test_no_context_returns_answer_unchanged) 
+... ok
+test_preserves_user_id_and_question_params 
+(test_cag_logic.CagLogicUnitTest.test_preserves_user_id_and_question_params) ... ok
+test_tone_casual_adds_friendly_message (test_cag_logic.CagLogicUnitTest.test_tone_casual_adds_friendly_message) ... ok
+test_tone_formal_adds_recommendation (test_cag_logic.CagLogicUnitTest.test_tone_formal_adds_recommendation) ... ok
+test_unknown_context_key_is_ignored (test_cag_logic.CagLogicUnitTest.test_unknown_context_key_is_ignored) ... ok
+test_empty_context_returns_empty_list (test_context_store.ContextStoreUnitTest.test_empty_context_returns_empty_list) 
+... ok
+test_list_for_unknown_user_returns_empty 
+(test_context_store.ContextStoreUnitTest.test_list_for_unknown_user_returns_empty) ... ok
+test_list_for_user_returns_copy_not_reference 
+(test_context_store.ContextStoreUnitTest.test_list_for_user_returns_copy_not_reference) ... ok
+test_save_and_list_for_user (test_context_store.ContextStoreUnitTest.test_save_and_list_for_user) ... ok
+test_save_multiple_keys_for_user (test_context_store.ContextStoreUnitTest.test_save_multiple_keys_for_user) ... ok
+test_save_overwrites_existing_key (test_context_store.ContextStoreUnitTest.test_save_overwrites_existing_key) ... ok
+test_save_returns_true (test_context_store.ContextStoreUnitTest.test_save_returns_true) ... ok
+test_users_are_isolated (test_context_store.ContextStoreUnitTest.test_users_are_isolated) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.619s
+
+OK

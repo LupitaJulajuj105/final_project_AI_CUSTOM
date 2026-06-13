@@ -110,6 +110,33 @@ button:hover {
   background: var(--accent-dark);
 }
 
+select {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  color: var(--ink);
+  background: #fffdf8;
+  font: inherit;
+  padding: 14px 16px;
+  cursor: pointer;
+}
+
+.context-form {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 12px;
+}
+
+.context-card h3 {
+  margin: 16px 0 4px;
+  font-family: "Courier New", monospace;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 pre {
   white-space: pre-wrap;
   word-break: break-word;

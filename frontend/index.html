@@ -27,8 +27,24 @@
 
         <aside class="card context-card">
           <p class="panel-label">Panel CAG</p>
-          <h2>Contexto pendiente</h2>
-          <p>Este panel es un punto de partida. Debe mostrar contexto guardado cuando implementes <code>/api/context</code>.</p>
+          <h2>Contexto del usuario</h2>
+
+          <form id="context-form" class="context-form">
+            <label for="ctx-key">Clave</label>
+            <select id="ctx-key" name="key">
+              <option value="audience">audience</option>
+              <option value="tone">tone</option>
+              <option value="format">format</option>
+              <option value="language">language</option>
+            </select>
+
+            <label for="ctx-value">Valor</label>
+            <input id="ctx-value" name="value" value="explicar como principiante" />
+
+            <button type="submit">Guardar contexto</button>
+          </form>
+
+          <h3>Contexto activo</h3>
           <pre id="context-output">Sin contexto cargado.</pre>
         </aside>
       </section>
